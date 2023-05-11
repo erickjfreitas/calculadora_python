@@ -1,16 +1,16 @@
-def menu(): 
-    iniciar=1
+def menu():  #criando o menu
+    iniciar=1   #defini a variavel 'iniciar' com valor de 1
     while iniciar:
-        iniciar = int(input("0. Sair \n"+ "1. Começar o jogo\n"))
-        if iniciar:
+        iniciar = int(input("0. Sair \n"+ "1. Começar o jogo\n")) #recebo a resposta do jogador
+        if iniciar:  # se a opção escolhida for 1 então o jogo é iniciado
             jogada()
         else:
             print("Saindo...")
 
-def jogada():
-    rodada=0
+def jogada(): #definindo jogadas
+    rodada=0 
     controle=0
-    while controle<10:
+    while controle<10: 
 
      while ganhador()==0:
        print('\nJogador', rodada%2 + 1 )
